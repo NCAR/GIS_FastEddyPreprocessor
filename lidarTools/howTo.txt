@@ -1,0 +1,7 @@
+Download LAZ files
+
+using lastools convert laz to las
+C:\Users\boehnert\Documents\projects\corpusChristi\lidar>C:\Users\boehnert\Documents\projects\lidarTools\LAStools\bin\laszip usgs11-150cm_2797134.laz
+
+Run  the Create LAS Dataset in ArcGIS Pro
+
