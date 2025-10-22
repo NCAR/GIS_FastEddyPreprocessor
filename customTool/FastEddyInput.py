@@ -287,7 +287,7 @@ def clipRaster(arcpy,finalDir,domainRaster,inData,scratchDir,outDir,domain,domai
         outName2 = outName + "_resample"
         ###make sure building
         out_raster = os.path.join(scratchDir,outName2)
-        out_data = os.path.join(outDir,outName)
+        out_data = os.path.join(outDir,outName+".tif")
         out_ascii = os.path.join(finalDir,outName+".asc")
         
         #project the domain to WRF Lambert
@@ -312,8 +312,8 @@ def clipRaster(arcpy,finalDir,domainRaster,inData,scratchDir,outDir,domain,domai
                 
         printMessages(arcpy,["converting to ascii " + out_data + " and " + out_ascii, 0,0])
 
-        with arcpy.EnvManager(extent=domainRaster, snapRaster=domainRaster):
-                arcpy.conversion.RasterToASCII(out_data, out_ascii)
+       # with arcpy.EnvManager(extent=domainRaster, snapRaster=domainRaster):
+       #         arcpy.conversion.RasterToASCII(out_data, out_ascii)
                 
         return out_data
 
