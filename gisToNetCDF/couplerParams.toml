@@ -1,0 +1,37 @@
+# couplerParams.toml
+#
+# FastEddy GIS Prep parameter file.
+
+## - Domain description - ##
+# Enter domain description parameters.
+
+# Domain name
+domain_name = 'test'
+# Longitude of origin (decimal degrees E)
+lon_0 = 0.0
+# Latitude of origin (decimal degrees N)
+lat_0 = 0.0
+# Domain height (meters)
+domain_height = 640
+# Domain width (meters)
+domain_width = 640
+# Cell size (meters)
+cellsize = 1
+
+## - ##
+
+## - Data paths - ##
+
+# Base path to datasets, assuming they are all in the same folder
+# Logs will be write to the same folder
+base_path = ''
+
+# Paths to existing ascii data created with ArcGIS.
+# Elevation file name
+elev_file = ''
+# NLCD file name
+nlcd_file = ''
+# Buildings file name
+buildings_file = ''
+
+## - ##
