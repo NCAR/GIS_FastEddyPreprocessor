@@ -1,43 +1,40 @@
 # GIS_FastEddyPreprocessor
 These tools will create the inputs for FastEddy using ArcGIS Pro
 
-Data Requirements
-Building Footprints 
-●	https://gis-fema.hub.arcgis.com/pages/usa-structures
-●	https://github.com/microsoft/USBuildingFootprints
-●	\\gisData.ucar.edu\data\FacilitiesAndCriticalInfrastructure\buildings
+## Data Requirements
+Building Footprints
+*	https://gis-fema.hub.arcgis.com/pages/usa-structures
+*	https://github.com/microsoft/USBuildingFootprints
+*	\\gisData.ucar.edu\data\FacilitiesAndCriticalInfrastructure\buildings
+
 LiDAR
-●	https://apps.nationalmap.gov/lidar-explorer/#/
-●	Local State, County, or City GIS offices
-○	Texas Natural Resources Information Systems - https://tnris.org/stratmap/elevation-lidar/
+*	https://apps.nationalmap.gov/lidar-explorer/#/
+*	Local State, County, or City GIS offices
+*	Texas Natural Resources Information Systems - https://tnris.org/stratmap/elevation-lidar/
+
 Elevation
-●	\\gisData.ucar.edu\data\ElevationAndDerivedProducts
-○	SRTM - \\gisData.ucar.edu\data\ElevationAndDerivedProducts\SRTM\srtm_void_filled\elevation\srtm_n_elev_w.jp2"
+*	\\gisData.ucar.edu\data\ElevationAndDerivedProducts
+*	SRTM - \\gisData.ucar.edu\data\ElevationAndDerivedProducts\SRTM\srtm_void_filled\elevation\srtm_n_elev_w.jp2"
+
 Land Cover
-●	NLCD - \\gisData.ucar.edu\data\BiologyAndEcology\Landcover_NLCD
-○	https://www.mrlc.gov/data
+*	NLCD - \\gisData.ucar.edu\data\BiologyAndEcology\Landcover_NLCD
+*	https://www.mrlc.gov/data
 
+## FastEddy Toolbox - “\customToolbox\FastEddy.pyt"
 
-FastEddy Toolbox - “\customToolbox\FastEddy.pyt"
-
- 
-Running Tool
+### Running Tool
 
 1.	Create a new ArcGIS Pro project
 2.	Create the following directories in Catalog pane in ArcGIS pro
-     a. Final
+  * Final
 3.	Copy the customTool, lidarTools, all Lidar data into your ArcGIS Pro project
 4.	Create the following empty geodatabases:
-  a.	finalGrids
-  b.	scratch
-
+	* finalGrids
+	* scratch
 5.	Install Toolbox in ArcGIS Pro
-1.	Open ArcGIS Pro and create a new project or open an existing Project
-2.	In the Catalog Pane, right click on Toolboxes and select Add Toolbox
-
- 
-
-3.	Navigate to the customToolbox directory and select FastEddy.pyt.  Click Ok.
+6.	Open ArcGIS Pro and create a new project or open an existing Project
+	* In the Catalog Pane, right click on Toolboxes and select Add Toolbox
+	* Navigate to the customToolbox directory and select FastEddy.pyt.  Click Ok.
 
  
 Step 1 : Create Building Surface from LiDAR
